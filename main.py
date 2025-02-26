@@ -18,7 +18,7 @@ app.include_router(imageRouter)
 async def not_found(full_path: str):
     return responseEntity(
         state = 'Success', 
-        message = 'La ruta no existe'
+        message = f'La ruta {full_path} no existe'
     )
 
 if __name__ == '__main__': 
