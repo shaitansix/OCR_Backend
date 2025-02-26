@@ -14,12 +14,12 @@ app.add_middleware(
 )
 
 app.include_router(imageRouter)
-@app.get('/{full_path:path}')
-async def not_found(full_path: str):
-    return responseEntity(
-        state = 'Success', 
-        message = 'La ruta no existe'
-    )
+# @app.get('/{full_path:path}')
+# async def not_found(full_path: str):
+#     return responseEntity(
+#         state = 'Success', 
+#         message = 'La ruta no existe'
+#     )
 
 if __name__ == '__main__': 
     port = 8000
