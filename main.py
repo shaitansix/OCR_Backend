@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 from routes.imageRoute import router as imageRouter
 from routes.notFound import router as notFoundRouter
 from config.cors import corsSetup
